@@ -300,4 +300,18 @@ curl -s -X POST "$MCP_HOST/mcp" \
   -d '{"jsonrpc":"2.0","id":8,"method":"tools/call","params":{"name":"register_wallet","arguments":{"public_key_hex":"<64 lowercase hex chars>","label":"agent wallet"}}}'
 ```
 
+```json
+{
+  "jsonrpc": "2.0",
+  "id": 8,
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"address\": \"mrwk1...\", \"public_key_hex\": \"<64 lowercase hex chars>\", \"label\": \"agent wallet\", \"github_login\": null, \"balance_mrwk\": \"0\", \"nonce\": 0}"
+      }
+    ]
+  }
+}
+```
 
